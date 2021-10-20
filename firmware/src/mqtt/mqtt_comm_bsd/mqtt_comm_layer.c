@@ -33,8 +33,8 @@
 #include "../../services/iot/cloud/bsd_adapter/bsdWINC.h"
 #include "debug_print.h"
 
-#define TX_BUFF_SIZE         400
-#define RX_BUFF_SIZE         2096
+#define TX_BUFF_SIZE         (64+1024)/*400*/
+#define RX_BUFF_SIZE         1024/*2096*/
 #define USER_LENGTH          0
 #define MQTT_KEEP_ALIVE_TIME 120
 
