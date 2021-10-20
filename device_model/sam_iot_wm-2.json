@@ -171,9 +171,42 @@
                 "en": "Custom String Telemetry from Application MCU over UART, up to 1024 characters"
             },
             "displayName": {
-                "en": "App MCU Telemetry (String)"
+                "en": "App MCU Telemetry 1 (String)"
             },
-            "name": "telemetry_Str",
+            "name": "telemetry_Str_1",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU over UART, up to 1024 characters"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 2 (String)"
+            },
+            "name": "telemetry_Str_2",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU over UART, up to 1024 characters"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 3 (String)"
+            },
+            "name": "telemetry_Str_3",
+            "schema": "string"
+        },
+        {
+            "@type": "Telemetry",
+            "description": {
+                "en": "Custom String Telemetry from Application MCU over UART, up to 1024 characters"
+            },
+            "displayName": {
+                "en": "App MCU Telemetry 4 (String)"
+            },
+            "name": "telemetry_Str_4",
             "schema": "string"
         },
         {
@@ -182,7 +215,7 @@
                 "en": "IP Address of SAM-IoT"
             },
             "displayName": {
-                "en": "IP ADdress"
+                "en": "IP Address"
             },
             "name": "ipAddress",
             "schema": "string",
