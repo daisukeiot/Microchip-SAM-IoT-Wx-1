@@ -125,7 +125,7 @@ typedef struct
     /* The application's current state */
     APP_STATES state;
 
-    /* State machine state for WiFi Scan
+    /* State machine state for WiFi Scan */
     APP_STATES_WIFI_SCAN scanState;
     /* TODO: Define any additional data used by the application. */
 
