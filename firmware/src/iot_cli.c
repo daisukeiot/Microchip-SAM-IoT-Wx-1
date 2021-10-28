@@ -235,7 +235,6 @@ static void set_wifi_auth(SYS_CMD_DEVICE_NODE* pCmdIO, char* pCredential)
     switch (authTypeTemp)
     {
         case WIFI_PARAMS_OPEN:
-            (*pCmdIO->pCmdApi->msg)(cmdIoParam, LINE_TERM "Open\r\n\4");
             strncpy(ssid, credentials[0], MAX_WIFI_CREDENTIALS_LENGTH - 1);
             strcpy(pass, "\0");
             strcpy(authType, "1");
@@ -243,14 +242,12 @@ static void set_wifi_auth(SYS_CMD_DEVICE_NODE* pCmdIO, char* pCredential)
 
         case WIFI_PARAMS_PSK:
         case WIFI_PARAMS_WEP:
-            (*pCmdIO->pCmdApi->msg)(cmdIoParam, LINE_TERM "PSK/WEP\r\n\4");
             strncpy(ssid, credentials[0], MAX_WIFI_CREDENTIALS_LENGTH - 1);
             strncpy(pass, credentials[1], MAX_WIFI_CREDENTIALS_LENGTH - 1);
             sprintf(authType, "%d", authTypeTemp);
             break;
 
         case WIFI_PARAMS_USE_CACHE:
-            (*pCmdIO->pCmdApi->msg)(cmdIoParam, LINE_TERM "Cache\r\n\4");
             strncpy(ssid, credentials[0], MAX_WIFI_CREDENTIALS_LENGTH - 1);
             sprintf(authType, "%d", atoi(credentials[1]));
             break;
