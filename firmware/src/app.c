@@ -501,7 +501,6 @@ void APP_Tasks(void)
 // This gets called by the scheduler approximately every 100ms
 static void APP_DataTask(void)
 {
-
     // Get the current time. This uses the C standard library time functions
     time_t    timeNow;   // = time(NULL);
     struct tm sys_time;
